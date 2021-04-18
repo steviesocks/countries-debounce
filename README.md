@@ -1,8 +1,7 @@
 # Countries Dropdown
 Test project for Kontomo
 
-###
-Using REST Countries API
+### Using REST Countries API
 Search results also check for alternate spellings.
 
 To run:
