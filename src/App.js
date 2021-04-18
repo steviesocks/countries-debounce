@@ -51,7 +51,6 @@ function App() {
         <p>*Search results take into account alternate spellings included in countries API.</p>
         <p>**API: <a href="https://restcountries.eu/rest/v2/all" target="_blank" rel="noreferrer">REST Countries</a> </p>
       </footer>
-
     </div>
   );
 }

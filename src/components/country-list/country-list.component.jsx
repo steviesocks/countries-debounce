@@ -18,7 +18,7 @@ function renderRow(props) {
 const CountryList = ({ countries }) => {
 
     return (
-        <FixedSizeList height={400} width={500} itemSize={46} itemCount={countries.length} itemData={countries}>
+        <FixedSizeList height={400} width={"60vw"} itemSize={46} itemCount={countries.length} itemData={countries}>
             {renderRow}
         </FixedSizeList>
     )
