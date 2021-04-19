@@ -10,7 +10,6 @@ const CountryList = ({ search }) => {
   const debouncedSearch = useDebounce(search, 500);
 
   useEffect(() => {
-    if (debouncedSearch) {
       setIsFetching(true);
       apiCall(debouncedSearch).then((data) => {
         data.length
@@ -18,9 +17,6 @@ const CountryList = ({ search }) => {
           : setCountries([{ name: "No results..." }]);
         setIsFetching(false);
       });
-    } else {
-      setCountries([]);
-    }
   }, [debouncedSearch]);
 
   return !isFetching ? <LazyList countries={countries} /> : <Fallback />;
