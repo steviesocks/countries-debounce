@@ -1,27 +1,29 @@
-import React from 'react';
-import { FixedSizeList } from 'react-window';
-import {
-    ListItem,
-    ListItemText
-} from '@material-ui/core';
-import { v4 } from 'uuid';
+import React, { useEffect, useState } from "react";
+import { useDebounce, apiCall } from "../../utils";
+import Fallback from "../fallback/fallback.component";
+import LazyList from "../lazy-list/lazy-list.component";
 
-function renderRow(props) {
-    const { index, style, data } = props;
-    return (
-      <ListItem button style={style} key={v4()}>
-        <ListItemText primary={data[index].name} />
-      </ListItem>
-    );
-  }
+const CountryList = ({ search }) => {
+  const [countries, setCountries] = useState([]);
+  const [isFetching, setIsFetching] = useState(false);
 
-const CountryList = ({ countries }) => {
+  const debouncedSearch = useDebounce(search, 500);
 
-    return (
-        <FixedSizeList height={400} width={"60vw"} itemSize={46} itemCount={countries.length} itemData={countries}>
-            {renderRow}
-        </FixedSizeList>
-    )
+  useEffect(() => {
+    if (debouncedSearch) {
+      setIsFetching(true);
+      apiCall(debouncedSearch).then((data) => {
+        data.length
+          ? setCountries(data)
+          : setCountries([{ name: "No results..." }]);
+        setIsFetching(false);
+      });
+    } else {
+      setCountries([]);
+    }
+  }, [debouncedSearch]);
+
+  return !isFetching ? <LazyList countries={countries} /> : <Fallback />;
 };
 
 export default CountryList;
