@@ -1,2 +1,0 @@
-(this.webpackJsonpcountries=this.webpackJsonpcountries||[]).push([[3],{125:function(t,s,c){"use strict";c.r(s);var e=c(6);s.default=function(t){var s=t.country;return console.log("fetch img"),Object(e.jsx)("img",{src:s.flag,alt:"",style:{height:"10px"}})}}}]);
-//# sourceMappingURL=3.ccc7943a.chunk.js.map
