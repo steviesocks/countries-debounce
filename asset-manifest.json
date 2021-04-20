@@ -1,22 +1,24 @@
 {
   "files": {
     "main.css": "/countries-debounce/static/css/main.6dea0f05.chunk.css",
-    "main.js": "/countries-debounce/static/js/main.c7a00257.chunk.js",
-    "main.js.map": "/countries-debounce/static/js/main.c7a00257.chunk.js.map",
-    "runtime-main.js": "/countries-debounce/static/js/runtime-main.894dc37f.js",
-    "runtime-main.js.map": "/countries-debounce/static/js/runtime-main.894dc37f.js.map",
-    "static/js/2.2097e51a.chunk.js": "/countries-debounce/static/js/2.2097e51a.chunk.js",
-    "static/js/2.2097e51a.chunk.js.map": "/countries-debounce/static/js/2.2097e51a.chunk.js.map",
-    "static/js/3.dda6e7c4.chunk.js": "/countries-debounce/static/js/3.dda6e7c4.chunk.js",
-    "static/js/3.dda6e7c4.chunk.js.map": "/countries-debounce/static/js/3.dda6e7c4.chunk.js.map",
+    "main.js": "/countries-debounce/static/js/main.252f3dc5.chunk.js",
+    "main.js.map": "/countries-debounce/static/js/main.252f3dc5.chunk.js.map",
+    "runtime-main.js": "/countries-debounce/static/js/runtime-main.62aa2076.js",
+    "runtime-main.js.map": "/countries-debounce/static/js/runtime-main.62aa2076.js.map",
+    "static/js/2.b3b5c116.chunk.js": "/countries-debounce/static/js/2.b3b5c116.chunk.js",
+    "static/js/2.b3b5c116.chunk.js.map": "/countries-debounce/static/js/2.b3b5c116.chunk.js.map",
+    "static/js/3.ccc7943a.chunk.js": "/countries-debounce/static/js/3.ccc7943a.chunk.js",
+    "static/js/3.ccc7943a.chunk.js.map": "/countries-debounce/static/js/3.ccc7943a.chunk.js.map",
+    "static/js/4.a1d098d3.chunk.js": "/countries-debounce/static/js/4.a1d098d3.chunk.js",
+    "static/js/4.a1d098d3.chunk.js.map": "/countries-debounce/static/js/4.a1d098d3.chunk.js.map",
     "index.html": "/countries-debounce/index.html",
     "static/css/main.6dea0f05.chunk.css.map": "/countries-debounce/static/css/main.6dea0f05.chunk.css.map",
-    "static/js/2.2097e51a.chunk.js.LICENSE.txt": "/countries-debounce/static/js/2.2097e51a.chunk.js.LICENSE.txt"
+    "static/js/2.b3b5c116.chunk.js.LICENSE.txt": "/countries-debounce/static/js/2.b3b5c116.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.894dc37f.js",
-    "static/js/2.2097e51a.chunk.js",
+    "static/js/runtime-main.62aa2076.js",
+    "static/js/2.b3b5c116.chunk.js",
     "static/css/main.6dea0f05.chunk.css",
-    "static/js/main.c7a00257.chunk.js"
+    "static/js/main.252f3dc5.chunk.js"
   ]
 }
